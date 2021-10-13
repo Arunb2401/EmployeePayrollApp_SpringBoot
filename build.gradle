@@ -1,0 +1,36 @@
+plugins {
+    id 'org.springframework.boot' version '2.5.5'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'com.bridgelabz'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.5.5'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'com.mscharley:autowire-electron_sjs0.6_2.11:0.1.0'
+    implementation 'org.no-hope:springapp:0.2.3'
+    implementation 'com.alibaba.middleware:metrics-annotation-springaop:2.0.6'
+    implementation 'com.github.chenhaiyangs:ruubypay-ratelimit-bucket4j:1.1.0'
+    implementation 'com.github.dadiyang:autologging-core:1.0.0'
+    implementation 'com.github.dadiyang:autologging-aop:1.0.0'
+    implementation 'biz.cgta:autowire_2.11:0.2.9'
+    implementation 'com.lihaoyi:autowire_2.10:0.2.6'
+    implementation 'com.lihaoyi:autowire_2.11:0.2.6'
+    implementation 'com.ibm.websphere.appserver.spi:com.ibm.websphere.appserver.spi.containerServices:4.0.56'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools:2.5.5'
+    runtimeOnly 'mysql:mysql-connector-java'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.5.5'
+}
+
+test {
+    useJUnitPlatform()
+}
